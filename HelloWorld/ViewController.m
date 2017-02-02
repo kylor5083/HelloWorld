@@ -26,4 +26,9 @@
 }
 
 
+- (IBAction)buttonTouch:(id)sender {
+    NSString *str = [_textField text];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:str]];
+    [_webView loadRequest:request];
+}
 @end
